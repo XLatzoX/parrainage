@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f0f4f8;
+  }
+}
+
+.brutal-shadow {
+  box-shadow: 6px 6px 0 #2d3748;
+  border: 3px solid #2d3748;
+}
+
+.grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(66, 153, 225, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(66, 153, 225, 0.1) 1px, transparent 1px);
+}
+
+.title-brutal {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 0 #2d3748;
+  position: relative;
+}
